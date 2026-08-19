@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burraco Segnapunti</title>
+<meta name="description" content="App Android per segnare i punti delle partite di burraco. Funziona senza internet, i dati restano sul telefono.">
+<style>
+  :root {
+    --sfondo: #F5F1E8;
+    --carta: #FFFFFF;
+    --testo: #1A1A17;
+    --tenue: #6B6B60;
+    --bordo: #E2DCCB;
+    --verde: #0B6B3A;
+    --oro: #C9A227;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sfondo: #12140F;
+      --carta: #1C1F18;
+      --testo: #F0EDE3;
+      --tenue: #9E9C90;
+      --bordo: #2C3026;
+      --verde: #2E9E63;
+      --oro: #D9B84A;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 4rem;
+    background: var(--sfondo);
+    color: var(--testo);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  .occhiello {
+    color: var(--oro); font-size: .85rem; font-weight: 700;
+    letter-spacing: .18em; margin: 0 0 .25rem;
+  }
+  h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 .5rem; }
+  .targhetta {
+    display: inline-block; vertical-align: middle;
+    background: var(--verde); color: var(--sfondo);
+    font-size: .72rem; font-weight: 700; letter-spacing: .1em;
+    padding: .2rem .6rem; border-radius: 999px; margin-left: .5rem;
+  }
+  .sommario { color: var(--tenue); font-size: 1.05rem; margin: 0 0 2.5rem; }
+  h2 { font-size: 1.2rem; margin: 2.5rem 0 .5rem; color: var(--verde); }
+  .riquadro {
+    background: var(--carta);
+    border: 1px solid var(--bordo);
+    border-radius: 14px;
+    padding: 1.25rem 1.4rem;
+    margin: 1.5rem 0;
+  }
+  .riquadro p:first-child { margin-top: 0; }
+  .riquadro p:last-child { margin-bottom: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--verde); }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem;
+    border-top: 1px solid var(--bordo);
+    color: var(--tenue); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="occhiello">SEGNAPUNTI</p>
+<h1>Burraco<span class="targhetta">BETA</span></h1>
+<p class="sommario">
+  Un'app Android per segnare i punti delle partite di burraco, con la stessa logica del
+  blocchetto di carta — ma senza errori di somma.
+</p>
+
+<div class="riquadro">
+  <p><strong>L'app è in prova.</strong> Funziona ed è usabile a tavola, ma è ancora in
+  sviluppo e può cambiare da una versione all'altra.</p>
+</div>
+
+<h2>Cosa fa</h2>
+<ul>
+  <li>Segna i punti mano per mano, con quattro modi di inserirli: dal solo totale al
+      conteggio guidato carta per carta, per chi non ha pratica.</li>
+  <li>Partite a coppie, testa a testa e a tre giocatori.</li>
+  <li>Rubrica dei giocatori abituali e archivio delle partite concluse.</li>
+  <li>Regole configurabili: valore dei burrachi, chiusura, pozzetto e carte si adattano
+      al regolamento della propria comitiva.</li>
+  <li>Funziona senza internet. Nessun account, nessun server.</li>
+</ul>
+
+<h2>I dati restano sul telefono</h2>
+<p>Nomi, punteggi e partite stanno in un archivio locale sul dispositivo e non partono
+mai da lì. Nessuna pubblicità, nessun tracciamento.
+Per i dettagli: <a href="privacy.html">informativa sulla privacy</a>.</p>
+
+<h2>Prossimamente</h2>
+<p>Si sta lavorando a statistiche dei giocatori, backup con export e import, e a una
+sezione dedicata ai tornei.</p>
+
+<footer>
+  <p>© 2026 Paolo Cardoni · <a href="privacy.html">Privacy</a></p>
+</footer>
+
+</main>
+</body>
+</html>
