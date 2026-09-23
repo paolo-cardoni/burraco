@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Burraco Segnapunti</title>
-<meta name="description" content="Segnapunti per il burraco: un'app Android gratuita che conta i punti delle partite, e un segnapunti da stampare. Senza pubblicità, senza registrazione, funziona senza internet.">
+<title>Come si contano i punti del burraco</title>
+<meta name="description" content="Il conteggio dei punti nel burraco: valore delle carte, burraco pulito, semipulito e sporco, chiusura, pozzetto e Victory Points, con un esempio.">
 <style>
   :root {
     --sfondo: #F5F1E8; --carta: #FFFFFF; --testo: #1A1A17; --tenue: #6B6B60;
@@ -83,29 +83,10 @@
 <body>
 <main>
 
-<p class="occhiello">SEGNAPUNTI</p>
-<h1>Burraco Segnapunti</h1>
-<p class="sommario">Un'applicazione Android gratuita per registrare i punti delle partite di burraco: calcola i totali mano per mano, senza errori di somma.</p>
-
-<div class="azione">
-  <a class="scarica" href="https://play.google.com/store/apps/details?id=com.paolocardoni.burraco">Scarica su Google Play</a>
-  <p class="sotto-scarica">Gratuita, senza pubblicità. Per telefoni e tablet Android.</p>
-</div>
-
-<h2>Funzioni</h2>
-<ul>
-  <li>Registrazione dei punti mano per mano, con quattro modalità di inserimento: dal solo totale al conteggio guidato carta per carta.</li>
-  <li>Partite a coppie, testa a testa e a tre giocatori.</li>
-  <li>Rubrica dei giocatori abituali e archivio delle partite concluse, con le statistiche.</li>
-  <li>Copia di sicurezza dei dati, in un file da conservare fuori dal telefono.</li>
-  <li>Regole configurabili: valore dei burrachi, della chiusura, del pozzetto e delle singole carte.</li>
-  <li>Victory Points come nei tornei, con la tabella scelta partita per partita.</li>
-  <li>Tema scuro e schermo sempre acceso durante il gioco.</li>
-  <li>Funzionamento senza connessione internet, senza account e senza server.</li>
-</ul>
-
-<h2>Segnapunti e regole da stampare</h2>
-<p>Sono disponibili gratuitamente il segnapunti cartacei del burraco, in formato A5 e A4, e un documento con le regole e i punteggi. Le regole del conteggio sono spiegate anche nella pagina <a href="come-si-contano-i-punti.html">Come si contano i punti del burraco</a>.</p>
+<p class="briciole"><a href="index.html">Burraco Segnapunti</a> &rsaquo; Come si contano i punti</p>
+<p class="occhiello">REGOLE</p>
+<h1>Come si contano i punti del burraco</h1>
+<p class="sommario">Il valore delle carte e dei bonus, il calcolo del punteggio di una mano e la conversione in Victory Points nei tornei.</p>
 
 
 <div class="blocco-stampa">
@@ -131,24 +112,87 @@
     <p class="app-titolo">Prima di stampare</p>
     <p>Burraco Segnapunti tiene il conto direttamente sul telefono: nessun foglio da stampare, nessuna somma da rifare, nessun punteggio smarrito. L'app è gratuita, senza pubblicità e senza registrazione, e funziona anche senza connessione internet.</p>
     <p class="eco">Meno carta e meno inchiostro: una scelta più semplice e più leggera per l'ambiente.</p>
-    <a class="scarica" href="https://play.google.com/store/apps/details?id=com.paolocardoni.burraco&referrer=utm_source%3Dsito%26utm_medium%3Dhome%26utm_campaign%3Dlancio">Prova l'app gratuita</a>
+    <a class="scarica" href="https://play.google.com/store/apps/details?id=com.paolocardoni.burraco&referrer=utm_source%3Dsito%26utm_medium%3Dpagina-punti%26utm_campaign%3Dlancio">Prova l'app gratuita</a>
   </div>
 </div>
 
-<h2>Guida rapida</h2>
-<p>Il funzionamento dell'app è illustrato in una guida rapida, disponibile come <a href="https://youtu.be/fd2ETOWXreY">video</a> e come <a href="guida-rapida.pdf">documento PDF</a> da leggere o stampare. I contenuti sono gli stessi.</p>
-
-<h2>I dati restano sul telefono</h2>
-<p>Nomi, punteggi e partite sono conservati esclusivamente sul dispositivo, e ne escono solo per scelta dell'utente: una copia di sicurezza, i risultati condivisi in una chat, una partita trasmessa agli altri giocatori. Nessuna pubblicità, nessun tracciamento. I dettagli sono nell'<a href="privacy.html">informativa sulla privacy</a>.</p>
-
-<h2>Funzioni in sviluppo</h2>
-<p>Alcune funzioni sono già presenti nell'app ma non ancora attive: sono visibili, con l'indicazione che saranno disponibili in seguito. Faranno parte di una versione Pro, oggi non in vendita. <strong>Le funzioni attualmente gratuite resteranno gratuite.</strong></p>
+<h2>Il punteggio di una mano</h2>
+<p>Al termine di ogni mano, ciascuna squadra calcola il proprio punteggio:</p>
 <ul>
-  <li>Trasferimento di una partita agli altri giocatori, tramite un codice da inquadrare.</li>
-  <li>Ripristino di una copia di sicurezza, per esempio dopo il cambio di telefono, ed esportazione delle partite per il foglio di calcolo.</li>
-  <li>Statistiche approfondite: la scheda di ogni giocatore, il rendimento delle coppie, i confronti diretti.</li>
-  <li>Una sezione dedicata ai tornei, ancora da sviluppare.</li>
+  <li>si sommano i bonus: burrachi e chiusura;</li>
+  <li>si sommano i punti delle carte calate sul tavolo;</li>
+  <li>si sottraggono i punti delle carte rimaste in mano;</li>
+  <li>si sottraggono 100 punti se la squadra non ha preso il pozzetto.</li>
 </ul>
+<p>Il risultato si aggiunge al totale delle mani precedenti. Vince la squadra che raggiunge per prima il traguardo, di norma 2005 punti; se entrambe lo raggiungono nella stessa mano, vince quella con il punteggio più alto.</p>
+
+<h2>Il valore delle carte</h2>
+<table>
+  <thead><tr><th>Carta</th><th class="n">Punti</th></tr></thead>
+  <tbody>
+    <tr><td>Jolly</td><td class="n">30</td></tr>
+    <tr><td>Pinella (il 2)</td><td class="n">20</td></tr>
+    <tr><td>Asso</td><td class="n">15</td></tr>
+    <tr><td>K, Q, J, 10, 9, 8</td><td class="n">10</td></tr>
+    <tr><td>7, 6, 5, 4, 3</td><td class="n">5</td></tr>
+  </tbody>
+</table>
+<p>Le carte calate sul tavolo si sommano; quelle rimaste in mano a fine mano si sottraggono.</p>
+
+<h2>I bonus</h2>
+<table>
+  <thead><tr><th>Bonus</th><th class="n">Punti</th></tr></thead>
+  <tbody>
+    <tr><td>Burraco pulito — sette o più carte, senza jolly né pinelle</td><td class="n">200</td></tr>
+    <tr><td>Burraco semipulito — contiene una pinella, con almeno sette carte in sequenza</td><td class="n">150</td></tr>
+    <tr><td>Burraco sporco — contiene un jolly, oppure una pinella usata come matta</td><td class="n">100</td></tr>
+  </tbody>
+</table>
+<p>Il bonus del burraco si aggiunge al valore delle carte che lo compongono.</p>
+
+<h2>Un esempio</h2>
+<p>Una squadra chiude la mano. Sul tavolo ha carte per 285 punti, fra cui un burraco pulito e uno sporco; al compagno restano in mano carte per 45 punti. Il pozzetto è stato preso.</p>
+<table>
+  <tbody>
+    <tr><td>Carte calate sul tavolo</td><td class="n">285</td></tr>
+    <tr><td>Burraco pulito</td><td class="n">+200</td></tr>
+    <tr><td>Burraco sporco</td><td class="n">+100</td></tr>
+    <tr><td>Chiusura</td><td class="n">+100</td></tr>
+    <tr><td>Carte rimaste in mano</td><td class="n">−45</td></tr>
+    <tr class="totale"><td>Punteggio della mano</td><td class="n">640</td></tr>
+  </tbody>
+</table>
+<p>Se il pozzetto non fosse stato preso, il punteggio della mano sarebbe di 540 punti.</p>
+
+<h2>In tre giocatori</h2>
+<p>A ogni mano, chi prende per primo il pozzetto gioca da solo contro gli altri due, che per quella mano formano una coppia. Il giocatore singolo segna tutti i propri punti; i punti della coppia si dividono a metà, arrotondando per eccesso.</p>
+
+<h2>I Victory Points</h2>
+<p>Nei tornei la partita è generalmente a tempo. A fine partita la differenza di punti fra le due squadre si converte in Victory Points: in palio ce ne sono sempre 20, ripartiti fra vincitori e vinti. Il pareggio vale 10 a 10.</p>
+<p>Tabella per il turno da quattro smazzate:</p>
+<table>
+  <thead><tr><th>Differenza di punti</th><th class="n">Vincitori</th><th class="n">Vinti</th></tr></thead>
+  <tbody>
+    <tr><td>fino a 100</td><td class="n">10</td><td class="n">10</td></tr>
+    <tr><td>da 105 a 300</td><td class="n">11</td><td class="n">9</td></tr>
+    <tr><td>da 305 a 500</td><td class="n">12</td><td class="n">8</td></tr>
+    <tr><td>da 505 a 700</td><td class="n">13</td><td class="n">7</td></tr>
+    <tr><td>da 705 a 900</td><td class="n">14</td><td class="n">6</td></tr>
+    <tr><td>da 905 a 1100</td><td class="n">15</td><td class="n">5</td></tr>
+    <tr><td>da 1105 a 1300</td><td class="n">16</td><td class="n">4</td></tr>
+    <tr><td>da 1305 a 1500</td><td class="n">17</td><td class="n">3</td></tr>
+    <tr><td>da 1505 a 1700</td><td class="n">18</td><td class="n">2</td></tr>
+    <tr><td>da 1705 a 2000</td><td class="n">19</td><td class="n">1</td></tr>
+    <tr><td>oltre 2000</td><td class="n">20</td><td class="n">0</td></tr>
+  </tbody>
+</table>
+<p>Per i turni da due e da tre smazzate si usano tabelle diverse, riportate nel PDF <a href="regole-e-punteggi.pdf">Regole e punteggi</a>.</p>
+
+<h2>Il conteggio automatico</h2>
+<p>Burraco Segnapunti applica queste regole automaticamente: registra le mani, calcola i totali, gestisce la partita in tre e i Victory Points. Tutti i valori si possono modificare, per adattarli al regolamento in uso nella propria comitiva.</p>
+<div class="azione">
+  <a class="scarica" href="https://play.google.com/store/apps/details?id=com.paolocardoni.burraco&referrer=utm_source%3Dsito%26utm_medium%3Dpagina-punti-fondo%26utm_campaign%3Dlancio">Prova l'app gratuita</a>
+</div>
 
 
 <footer>
